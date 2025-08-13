@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        /* Simple styling for the body to match Canvas's look */
+        body {
+            background-color: #f5f5f5;
+            font-family: 'Inter', sans-serif;
+            padding: 2rem;
+        }
+        .canvas-container {
+            max-width: 900px;
+            margin: auto;
+            background-color: white;
+            border: 1px solid #d1d1d1;
+            border-radius: 0.375rem;
+            padding: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="canvas-container">
+        <!-- Header Section -->
+        <div class="flex items-center border-b pb-4 mb-6">
+            <div class="w-24 h-24 bg-gray-200 flex items-center justify-center rounded-lg mr-6">
+                <i class="fa-solid fa-flag-checkered text-5xl text-gray-500"></i>
+            </div>
+            <div>
+                <h1 class="text-4xl font-bold text-gray-800">Week 1: Welcome to the Trail!</h1>
+                <p class="text-lg text-gray-600">August 26 - August 30</p>
+            </div>
+        </div>
+
+        <!-- Main Content Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <!-- Left Column: Introduction and Objectives -->
+            <div class="md:col-span-2">
+                <h2 class="text-2xl font-semibold text-gray-700 mb-2">Introduction</h2>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    Welcome to the first week of Programming Fundamentals! This week is all about setting the stage for a successful semester. We will focus on getting to know each other, understanding the course structure, introducing our semester-long project, and getting comfortable with the tools we'll be using every day. The goal is to ensure everyone has a working development environment and feels connected to the class community.
+                </p>
+
+                <div class="bg-blue-50 border-l-4 border-blue-400 p-4 rounded-r-lg">
+                    <div class="flex items-center">
+                        <div class="mr-4">
+                            <i class="fa-solid fa-bullseye text-3xl text-blue-500"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-blue-800">Learning Objectives</h3>
+                            <ul class="list-disc list-inside text-blue-700 mt-2 space-y-1">
+                                <li>Describe the active-learning philosophy of the course.</li>
+                                <li>Form a semester-long project group ("Wagon Party").</li>
+                                <li>Launch, navigate, and save changes within the GitHub Codespaces environment.</li>
+                                <li>Clone a repository and push a commit using command-line Git.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: To-Do List -->
+            <div class="md:col-span-1">
+                <div class="bg-green-50 border-l-4 border-green-500 p-4 rounded-r-lg">
+                    <div class="flex items-center mb-3">
+                        <i class="fa-solid fa-list-check text-2xl text-green-600 mr-3"></i>
+                        <h3 class="text-xl font-semibold text-green-800">To-Do This Week</h3>
+                    </div>
+                    <ul class="space-y-3 text-green-900">
+                        <!-- Reading Task -->
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-book-open mt-1 mr-3"></i>
+                            <div>
+                                <span class="font-semibold">Read:</span>
+                                <p class="text-sm">The Rust Book: Chapters 1 & 2</p>
+                            </div>
+                        </li>
+                        <!-- Assignment Task -->
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-code mt-1 mr-3"></i>
+                            <div>
+                                <span class="font-semibold">Submit:</span>
+                                <p class="text-sm"><a href="#" class="text-blue-600 hover:underline">Homework 1: Guessing Game</a></p>
+                            </div>
+                        </li>
+                        <!-- Quiz Task -->
+                        <li class="flex items-start">
+                             <i class="fa-solid fa-pen-to-square mt-1 mr-3"></i>
+                            <div>
+                                <span class="font-semibold">Take:</span>
+                                <p class="text-sm"><a href="#" class="text-blue-600 hover:underline">Week 1 Reading Quiz</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- In-Class Agenda Section -->
+        <div class="border-t pt-6">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4">In-Class Agenda</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Day 1: Monday -->
+                <div class="bg-gray-50 p-4 rounded-lg border">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3"><i class="fa-solid fa-calendar-day mr-2"></i>Monday, August 26</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-700"><i class="fa-solid fa-users-rays mr-2 text-blue-500"></i>Conceptual Learning & Activities</h4>
+                            <ul class="list-disc list-inside text-gray-600 mt-1 pl-2 text-sm space-y-1">
+                                <li>The 5-Minute Syllabus</li>
+                                <li>"Find Someone Who..." Icebreaker</li>
+                                <li>The Oregon Trail - Project Kickoff</li>
+                                <li>Rapid Team-Building Rotations (Set 1)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-700"><i class="fa-solid fa-laptop-code mr-2 text-purple-500"></i>In-Class Lab</h4>
+                            <ul class="list-disc list-inside text-gray-600 mt-1 pl-2 text-sm space-y-1">
+                                <li>Guided Codespaces Workshop</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Day 2: Wednesday -->
+                <div class="bg-gray-50 p-4 rounded-lg border">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3"><i class="fa-solid fa-calendar-day mr-2"></i>Wednesday, August 28</h3>
+                     <div class="space-y-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-700"><i class="fa-solid fa-users-rays mr-2 text-blue-500"></i>Conceptual Learning & Activities</h4>
+                            <ul class="list-disc list-inside text-gray-600 mt-1 pl-2 text-sm space-y-1">
+                                <li>Rapid Team-Building Rotations (Set 2)</li>
+                                <li>Forming Your Wagon Party</li>
+                                <li>Intro to Collaborative Workflows</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-700"><i class="fa-solid fa-laptop-code mr-2 text-purple-500"></i>In-Class Lab</h4>
+                            <ul class="list-disc list-inside text-gray-600 mt-1 pl-2 text-sm space-y-1">
+                                <li>Supervised Homework Lab: Guessing Game</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
