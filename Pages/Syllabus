@@ -1,0 +1,56 @@
+<div style="max-width: 900px; margin: auto; background-color: white; border: 1px solid #d1d1d1; border-radius: 6px; font-family: sans-serif; padding: 32px;">
+    <div style="background-color: #f3f4f6; border-radius: 6px; padding: 32px; text-align: center; margin-bottom: 32px;">
+        <div style="font-size: 50px; margin-bottom: 16px;">📜</div>
+        <h2 style="font-size: 36px; color: #1f2937; margin: 0;">Course Syllabus</h2>
+        <p style="font-size: 18px; color: #4b5563; margin: 4px 0 0 0;">All the official details for &lt;your course&gt;</p>
+    </div>
+    <div style="margin-bottom: 32px;">
+        <h2 style="font-size: 24px; color: #374151; margin-top: 0; margin-bottom: 16px; border-bottom: 2px solid #e5e7eb; padding-bottom: 8px;">Class Focus: Instructor's Overview</h2>
+        <p style="color: #4b5563; line-height: 1.6;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent volutpat quis ipsum at scelerisque. Suspendisse non bibendum sapien. Donec in eros ut risus pulvinar maximus sed id sapien. Phasellus in pellentesque ipsum. Cras laoreet cursus nibh eu tristique. Pellentesque bibendum vitae sem at hendrerit.</p>
+        <div style="background-color: #eff6ff; border-left: 4px solid #60a5fa; border-radius: 0 4px 4px 0; padding: 16px; margin-top: 16px;">
+            <h3 style="font-size: 18px; color: #1e40af; margin: 0 0 8px 0;">By the end of this course, you will be able to:</h3>
+            <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Vivamus vel ipsum vestibulum, mattis tortor eget, luctus dolor.</li>
+                <li>Etiam vitae arcu vel arcu eleifend sollicitudin.</li>
+                <li>Cras efficitur odio eu porta ultrices.</li>
+                <li>Pellentesque et quam vitae nisi tristique sollicitudin vitae fringilla sem.</li>
+            </ul>
+        </div>
+    </div>
+    <div style="margin-bottom: 32px;">
+        <h2 style="font-size: 24px; color: #374151; margin-top: 0; margin-bottom: 16px; border-bottom: 2px solid #e5e7eb; padding-bottom: 8px;">Our Learning Philosophy: Active, Hands-On, and Project-Driven</h2>
+        <div id="lipsum">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vestibulum augue arcu, blandit vehicula quam faucibus vel. Vivamus gravida aliquet mauris sed vulputate. Donec vitae nisl dolor. Nunc enim urna, mattis nec dapibus sed, egestas eget erat. Integer ornare nulla sit amet metus laoreet, nec viverra elit mattis. Donec fermentum aliquet ultrices. Aenean accumsan tempus nisi sit amet vulputate.</p>
+        </div>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; margin-left: -16px; margin-right: -16px; margin-bottom: 32px;">
+        <div style="flex: 1 1 400px; padding-left: 16px; padding-right: 16px; min-width: 300px;">
+            <div style="background-color: #f9fafb; padding: 16px; border-radius: 6px; border: 1px solid #e5e7eb; height: 100%;">
+                <h3 style="font-size: 20px; color: #1f2937; margin: 0 0 12px 0;">📊 Grading Criteria</h3>
+                <p style="color: #4b5563; font-size: 14px;"><em>[...table with grading categories and weights...]</em></p>
+            </div>
+        </div>
+        <div style="flex: 1 1 400px; padding-left: 16px; padding-right: 16px; min-width: 300px;">
+            <div style="background-color: #f9fafb; padding: 16px; border-radius: 6px; border: 1px solid #e5e7eb; height: 100%;">
+                <h3 style="font-size: 20px; color: #1f2937; margin: 0 0 12px 0;">⏳ Course Late Work Policy</h3>
+                <div id="lipsum">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vestibulum augue arcu, blandit vehicula quam faucibus vel. Vivamus gravida aliquet mauris sed vulputate. Donec vitae nisl dolor. Nunc enim urna, mattis nec dapibus sed, egestas eget erat. Integer ornare nulla sit amet metus laoreet, nec viverra elit mattis. Donec fermentum aliquet ultrices. Aenean accumsan tempus nisi sit amet vulputate.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: #fffbeb; border-left: 4px solid #f59e0b; border-radius: 0 4px 4px 0; padding: 16px; margin-bottom: 32px;">
+        <div style="display: flex; align-items: center; margin-bottom: 16px;">
+            <div style="font-size: 24px; margin-right: 12px;">💡</div>
+            <h3 style="font-size: 20px; color: #b45309; margin: 0;">How to Ask for Help Effectively</h3>
+        </div>
+        <div id="lipsum">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vestibulum augue arcu, blandit vehicula quam faucibus vel. Vivamus gravida aliquet mauris sed vulputate. Donec vitae nisl dolor. Nunc enim urna, mattis nec dapibus sed, egestas eget erat. Integer ornare nulla sit amet metus laoreet, nec viverra elit mattis. Donec fermentum aliquet ultrices. Aenean accumsan tempus nisi sit amet vulputate.</p>
+        </div>
+    </div>
+    <div style="margin-bottom: 32px;">
+        <h2 style="font-size: 24px; color: #374151; margin-top: 0; margin-bottom: 16px; border-bottom: 2px solid #e5e7eb; padding-bottom: 8px;">Tentative Weekly Schedule</h2>
+        <p style="color: #4b5563; line-height: 1.6;"><em>[...table with the weekly topic breakdown...]</em></p>
+    </div>
+</div>
