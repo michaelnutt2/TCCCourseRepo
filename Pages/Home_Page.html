@@ -1,51 +1,81 @@
+<!-- INSTRUCTIONS FOR USE:                                                         -->
+<!-- 1. Navigate to the "Pages" section of your Canvas course and create a new page. -->
+<!-- 2. Set this new page as your "Front Page".                                    -->
+<!-- 3. Switch to the HTML Editor view.                                            -->
+<!-- 4. Copy and paste this entire block of code into the editor.                  -->
+<!-- 5. Switch back to the Rich Content Editor to fill in the placeholder text.    -->
+<!-- 6. Update the href="#" links to point to the correct pages in your course.    -->
+
 <div style="max-width: 900px; margin: auto; background-color: white; border: 1px solid #d1d1d1; border-radius: 6px; font-family: sans-serif; padding: 32px;">
+
+    <!-- Header Banner -->
     <div style="background-color: #1f2937; border-radius: 6px; padding: 32px; text-align: center; margin-bottom: 24px;">
-        <h2 style="font-size: 36px; color: #ffffff; margin: 0;">Lorem 1000: Lorem Ipsum</h2>
-        <p style="font-size: 18px; color: #d1d5db; margin: 4px 0 0 0;">Welcome! Lorem ipsum dolor sit amet</p>
+        <h1 style="font-size: 36px; font-weight: bold; color: #ffffff; margin: 0;">
+            <!-- INSTRUCTION: Replace with your course name and number -->
+            [Your Course Name and Number]
+        </h1>
+        <p style="font-size: 18px; color: #d1d5db; margin: 4px 0 0 0;">
+            <!-- INSTRUCTION: Replace with a brief, welcoming subtitle -->
+            [A brief, welcoming subtitle for your course]
+        </p>
     </div>
+
+    <!-- Main Content Grid -->
     <div style="display: flex; flex-wrap: wrap; margin-left: -16px; margin-right: -16px;">
+        <!-- Left Column: Welcome & Getting Started -->
         <div style="flex: 2 1 500px; padding-left: 16px; padding-right: 16px; min-width: 300px;">
-            <h2 style="font-size: 24px; color: #374151; margin-top: 0; margin-bottom: 8px;">Welcome to the Course!</h2>
-            <p style="color: #4b5563; line-height: 1.6; margin-top: 0; margin-bottom: 24px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent volutpat quis ipsum at scelerisque. Suspendisse non bibendum sapien. Donec in eros ut risus pulvinar maximus sed id sapien. Phasellus in pellentesque ipsum. Cras laoreet cursus nibh eu tristique. Pellentesque bibendum vitae sem at hendrerit.&nbsp;</p>
+            <h2 style="font-size: 24px; font-weight: 600; color: #374151; margin-top: 0; margin-bottom: 8px;">Welcome to the Course!</h2>
+            <p style="color: #4b5563; line-height: 1.6; margin-top: 0; margin-bottom: 24px;">
+                <!-- INSTRUCTION: Write a brief, welcoming paragraph about your course. -->
+                <em>[A brief, welcoming paragraph about your course, its main goals, and what students can expect.]</em>
+            </p>
+            
             <div style="background-color: #f0fdf4; border-left: 4px solid #22c55e; border-radius: 0 4px 4px 0; padding: 16px;">
                 <div style="display: flex; align-items: center; margin-bottom: 16px;">
                     <div style="font-size: 24px; margin-right: 12px;">🚀</div>
-                    <h3 style="font-size: 20px; color: #166534; margin: 0;">Getting Started</h3>
+                    <h3 style="font-size: 20px; font-weight: 600; color: #166534; margin: 0;">Getting Started</h3>
                 </div>
                 <p style="color: #14532d; margin-top: 0; margin-bottom: 16px;">New to the course? Here's how to begin:</p>
-                <ol style="color: #14532d; margin: 0; padding-left: 20px; line-height: 1.8;">
-                    <li>Read through all the pages in the <strong>Start Here</strong> module.</li>
-                    <li>Review the full <strong>Course Syllabus</strong>.</li>
-                    <li>Head to the <strong>Course Map</strong> to see the plan for Week 1.</li>
+                <ol style="color: #14532d; margin: 0; padding-left: 20px; line-height: 1.8; font-weight: 500;">
+                    <li>Read through all the pages in the <a href="#" style="color: #2563eb;"><strong>Start Here</strong></a> module.</li>
+                    <li>Review the full <a href="#" style="color: #2563eb;"><strong>Course Syllabus</strong></a>.</li>
+                    <li>Head to the <a href="#" style="color: #2563eb;"><strong>Modules</strong></a> to see the plan for Week 1.</li>
                 </ol>
             </div>
         </div>
+
+        <!-- Right Column: Instructor Info -->
         <div style="flex: 1 1 250px; padding-left: 16px; padding-right: 16px; min-width: 300px;">
             <div style="background-color: #f9fafb; padding: 16px; border-radius: 6px; border: 1px solid #e5e7eb;">
-                <h3 style="font-size: 20px; color: #1f2937; margin: 0 0 12px 0;">Instructor Information</h3>
-                <div style="display: flex; align-items: center; margin-bottom: 16px;"><img style="max-width: 80px; height: auto; border-radius: 50%; margin-right: 16px;" src="https://placehold.co/200x200/e0e0e0/333?text=Your+Photo" alt="A photo of the instructor" />
+                <h3 style="font-size: 20px; font-weight: bold; color: #1f2937; margin: 0 0 12px 0;">Instructor Information</h3>
+                <div style="display: flex; align-items: center; margin-bottom: 16px;">
+                    <!-- INSTRUCTION: Replace the src="..." with a link to your photo. -->
+                    <img src="https://placehold.co/80x80/e0e0e0/333?text=Photo" alt="A photo of the instructor" style="max-width: 80px; height: auto; border-radius: 50%; margin-right: 16px;">
                     <div>
-                        <p style="color: #1f2937; margin: 0;">&lt;Your Name&gt;</p>
-                        <p style="font-size: 14px; color: #4b5563; margin: 4px 0 0 0;">&lt;email&gt;</p>
+                        <!-- INSTRUCTION: Replace with your name and email. -->
+                        <p style="font-weight: 600; color: #1f2937; margin: 0;">[Your Name]</p>
+                        <p style="font-size: 14px; color: #4b5563; margin: 4px 0 0 0;"><a href="mailto:your.email@example.com" style="color: #2563eb;">your.email@example.com</a></p>
                     </div>
                 </div>
                 <div>
-                    <h4 style="color: #374151; margin: 0 0 8px 0;">Office Hours</h4>
+                    <h4 style="font-weight: 600; color: #374151; margin: 0 0 8px 0;">Office Hours</h4>
+                    <!-- INSTRUCTION: Replace with your office hours and booking link. -->
                     <ul style="color: #4b5563; margin: 0; padding-left: 20px; font-size: 14px; line-height: 1.5;">
-                        <li>Days: Times</li>
-                        <li>Days: Times</li>
-                        <li>Book an appointment&lt;Link to Book An Appointment from Outlook - <a href="https://learn.microsoft.com/en-us/microsoft-365/bookings/bookings-overview?view=o365-worldwide">How to</a>&gt;</li>
+                        <li>[Day]: [Time] - [Time]</li>
+                        <li>[Day]: [Time] - [Time]</li>
+                        <li><a href="#" style="color: #2563eb; font-weight: 500;">Book an appointment</a></li>
                     </ul>
                 </div>
             </div>
+            
             <div style="margin-top: 16px; background-color: #f9fafb; padding: 16px; border-radius: 6px; border: 1px solid #e5e7eb;">
-                <h3 style="font-size: 20px; color: #1f2937; margin: 0 0 12px 0;">Quick Links</h3>
-                <ul style="color: #4b5563; margin: 0; padding-left: 20px; font-size: 14px; line-height: 1.8;">
-                    <li>Start Here Module</li>
-                    <li>Course Map (Modules)</li>
-                    <li>Project Hub</li>
-                    <li>Announcements</li>
-                </ul>
+                 <h3 style="font-size: 20px; font-weight: bold; color: #1f2937; margin: 0 0 12px 0;">Quick Links</h3>
+                 <ul style="color: #4b5563; margin: 0; padding-left: 20px; font-size: 14px; line-height: 1.8;">
+                    <li><a href="#" style="color: #2563eb; font-weight: 500;">Start Here Module</a></li>
+                    <li><a href="#" style="color: #2563eb; font-weight: 500;">Modules</a></li>
+                    <li><a href="#" style="color: #2563eb; font-weight: 500;">Syllabus</a></li>
+                    <li><a href="#" style="color: #2563eb; font-weight: 500;">Announcements</a></li>
+                 </ul>
             </div>
         </div>
     </div>
