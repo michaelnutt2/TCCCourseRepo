@@ -1,0 +1,80 @@
+<div style="max-width: 900px; margin: auto; background-color: white; border: 1px solid #d1d1d1; border-radius: 6px; font-family: sans-serif; padding: 32px;">
+    <div style="display: flex; align-items: center; border-bottom: 1px solid #e5e7eb; padding-bottom: 16px; margin-bottom: 24px;">
+        <div style="width: 96px; height: 96px; background-color: #e5e7eb; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 50px; color: #6b7280; flex-shrink: 0;">🧑&zwj;💻</div>
+        <div style="margin-left: 24px;">
+            <h2 style="font-size: 36px; color: #1f2937; margin: 0;">Our Development Environment</h2>
+            <p style="font-size: 18px; color: #4b5563; margin: 4px 0 0 0;">A guide to your coding workspace and workflow for the semester.</p>
+        </div>
+    </div>
+    <div>
+        <div style="margin-bottom: 32px;">
+            <h3 style="font-size: 24px; color: #374151; margin-top: 0; margin-bottom: 16px; border-bottom: 2px solid #e5e7eb; padding-bottom: 8px;">Initial One-Time Setup</h3>
+            <p style="color: #4b5563; line-height: 1.6; margin-bottom: 16px;">Before you can begin working, you need to complete a few one-time setup steps. Please follow these in order.</p>
+            <ol style="color: #4b5563; margin: 0; padding-left: 20px; line-height: 1.8;">
+                <li><strong>Create a GitHub Account:</strong> If you do not already have one, go to <a style="color: #2563eb;" href="https://github.com/join">github.com/join</a> to create a free account.</li>
+                <li><strong>Join our GitHub Classroom:</strong> Click the link below and accept the "Setup" assignment to be added to our course organization.
+                    <div style="background-color: #eff6ff; border-left: 4px solid #60a5fa; border-radius: 0 4px 4px 0; padding: 16px; margin-top: 8px;">
+                        <p style="color: #1d4ed8; margin: 0; line-height: 1.6;"><strong>Classroom Setup Link:</strong> <a style="color: #2563eb;" href="https://classroom.github.com/a/y4-MAF99">https://classroom.github.com/a/y4-MAF99</a></p>
+                    </div>
+                </li>
+                <li><strong>Create your "Home" Repository:</strong> Navigate to the Home repository template link below. Click "Use this template" -&gt; "Create a new repository". Ensure the "Owner" is <code>1436-TCCD-MTN</code> and name the repository <code>firstname_lastname</code>.
+                    <div style="background-color: #eff6ff; border-left: 4px solid #60a5fa; border-radius: 0 4px 4px 0; padding: 16px; margin-top: 8px;">
+                        <p style="color: #1d4ed8; margin: 0; line-height: 1.6;"><strong>Home Repository Template Link:</strong> <a style="color: #2563eb;" href="https://github.com/1436-TCCD-MTN/Home">https://github.com/1436-TCCD-MTN/Home</a></p>
+                    </div>
+                </li>
+                <li><strong>Set up your "Home" Codespace:</strong> From your newly created personal Home repository, create your codespace. This will be your primary development environment.</li>
+                <li><strong>Install Tools:</strong> Your Codespace needs a few tools installed. Run the following commands one by one in the terminal:
+                    <div style="background-color: #f3f4f6; border-radius: 6px; padding: 16px; font-family: monospace; color: #1f2937; margin-top: 8px;">
+                        <p style="margin: 0 0 8px 0;"># Install the Rust toolchain (choose option 1)</p>
+                        <code>curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh</code>
+                        <p style="margin: 16px 0 8px 0;"># Install git-cliff for changelogs</p>
+                        <code>cargo install git-cliff</code>
+                    </div>
+                </li>
+                <li><strong>Set Up Pre-Commit Hooks:</strong> Our projects use automated checks to ensure code quality <em>before</em> you commit. In each assignment and project repository you clone, you will need to run this one-time setup command from inside that project's folder:
+                    <div style="background-color: #f3f4f6; border-radius: 6px; padding: 16px; font-family: monospace; color: #1f2937; margin-top: 8px;"><code>git config core.hooksPath .githooks</code></div>
+                </li>
+            </ol>
+        </div>
+        <div style="margin-bottom: 32px;">
+            <h3 style="font-size: 24px; color: #374151; margin-top: 0; margin-bottom: 16px; border-bottom: 2px solid #e5e7eb; padding-bottom: 8px;">The Professional Git Workflow</h3>
+            <p style="color: #4b5563; line-height: 1.6; margin-bottom: 16px;">We will use the command-line Git workflow that is standard in the software development industry. This process ensures that your work is saved incrementally and that collaboration is smooth and organized.</p>
+            <hr />
+            <h4 style="font-size: 18px; color: #1f2937; margin: 24px 0 8px 0;">Individual Assignment Workflow</h4>
+            <p style="color: #4b5563; line-height: 1.6; margin-bottom: 16px;">For your weekly homework, you will follow this cycle:</p>
+            <ol style="color: #4b5563; margin: 0; padding-left: 20px; line-height: 1.8;">
+                <li><strong>Clone &amp; Setup:</strong> In your "Home" Codespace terminal, use <code>git clone</code> to download the assignment repository. <code>cd</code> into the new folder and run <code>git config core.hooksPath .githooks</code> once.</li>
+                <li><strong>Create a Branch:</strong> Before writing any code, create a new branch for your work. For example: <code>git checkout -b feat/implement-game-logic</code></li>
+                <li><strong>Write Your Code:</strong> Work on the assignment, saving your files as you go.</li>
+                <li><strong>Commit Your Work:</strong> Save your progress in small, logical chunks. The pre-commit hooks will automatically check your formatting and commit message. The cycle is:
+                    <ul style="margin-top: 8px; padding-left: 20px;">
+                        <li><code>git add</code> - Stage the specific file you changed.</li>
+                        <li><code>git commit</code> - Open the editor to write a detailed semantic commit message.</li>
+                    </ul>
+                </li>
+                <li><strong>Push Your Branch:</strong> Back up your work to GitHub: `git push --set-upstream origin feat/implement-game-logic`</li>
+                <li><strong>Generate Changelog:</strong> Before creating your PR, update the changelog file:
+                    <ul style="margin-top: 8px; padding-left: 20px;">
+                        <li><code>git cliff -o CHANGELOG.md</code> - Generate the changelog.</li>
+                        <li><code>git add CHANGELOG.md</code> - Stage the updated file.</li>
+                        <li><code>git commit -m "chore: update changelog"</code> - Commit the changelog.</li>
+                        <li><code>git push</code> - Push the final commit.</li>
+                    </ul>
+                </li>
+                <li><strong>Create a Pull Request:</strong> On GitHub, create a "Pull Request" to merge your branch into the <code>main</code> branch.</li>
+            </ol>
+            <hr />
+            <h4 style="font-size: 18px; color: #1f2937; margin: 24px 0 8px 0;">Group Project Workflow</h4>
+            <p style="color: #4b5563; line-height: 1.6; margin-bottom: 16px;">The group project follows the same basic workflow but adds a crucial collaboration step: <strong>Peer Code Review</strong>.</p>
+            <ol style="color: #4b5563; margin: 0; padding-left: 20px; line-height: 1.8;">
+                <li><strong>Claim an Issue &amp; Create a Branch.</strong></li>
+                <li><strong>Write Code &amp; Commit Iteratively.</strong></li>
+                <li><strong>Generate Changelog &amp; Push Final Changes.</strong></li>
+                <li><strong>Create a Pull Request:</strong> Formally propose your changes.</li>
+                <li><strong>Request a Review:</strong> In your Pull Request, you will <strong>request a review</strong> from at least one other member of your project group.</li>
+                <li><strong>Peer Code Review:</strong> Your teammate will review your code, leave comments or questions, and ultimately "Approve" your changes.</li>
+                <li><strong>Merge:</strong> Only after your Pull Request has been approved by a teammate can it be merged into the <code>main</code> branch.</li>
+            </ol>
+        </div>
+    </div>
+</div>
