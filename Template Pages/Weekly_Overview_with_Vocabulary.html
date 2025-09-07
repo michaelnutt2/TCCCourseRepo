@@ -1,23 +1,37 @@
+<!-- INSTRUCTIONS FOR USE:                                                         -->
+<!-- 1. Create a new page in your Canvas course for the week's overview.           -->
+<!-- 2. Switch to the HTML Editor view.                                            -->
+<!-- 3. Copy and paste this entire block of code into the editor.                  -->
+<!-- 4. Switch back to the Rich Content Editor to fill in the placeholder text.    -->
+<!-- 5. Update the href="#" links in the To-Do list to point to your assignments.  -->
+
 <div style="max-width: 900px; margin: auto; background-color: white; border: 1px solid #d1d1d1; border-radius: 6px; font-family: sans-serif; padding: 32px;">
 
+    <!-- Header Section -->
     <div style="display: flex; align-items: center; border-bottom: 1px solid #e5e7eb; padding-bottom: 16px; margin-bottom: 24px;">
         <div style="width: 96px; height: 96px; background-color: #e5e7eb; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 50px; color: #6b7280; flex-shrink: 0;">
+            <!-- INSTRUCTION: Choose an emoji that represents your week's topic -->
             🏁
         </div>
         <div style="margin-left: 24px;">
             <h2 style="font-size: 36px; font-weight: bold; color: #1f2937; margin: 0;">
+                <!-- INSTRUCTION: Replace with your week number and title -->
                 Week [#]: [Your Title for the Week]
             </h2>
             <p style="font-size: 18px; color: #4b5563; margin: 4px 0 0 0;">
+                <!-- INSTRUCTION: Replace with the dates for the week -->
                 [Start Date] - [End Date]
             </p>
         </div>
     </div>
 
+    <!-- Main Content: Flexbox container for responsive columns -->
     <div style="display: flex; flex-wrap: wrap; margin-bottom: 32px; margin-left: -16px; margin-right: -16px;">
+        <!-- Left Column -->
         <div style="flex: 2 1 500px; padding-left: 16px; padding-right: 16px; min-width: 300px;">
             <h3 style="font-size: 24px; font-weight: 600; color: #374151; margin-top: 0; margin-bottom: 8px;">Introduction</h3>
             <p style="color: #4b5563; line-height: 1.6; margin-top: 0; margin-bottom: 24px;">
+                <!-- INSTRUCTION: Write a brief, welcoming paragraph introducing the week's topics and goals. -->
                 <em>[A brief, welcoming paragraph introducing the week's topics, why they are important, and what students can expect to learn.]</em>
             </p>
             <div style="background-color: #eff6ff; border-left: 4px solid #60a5fa; border-radius: 0 4px 4px 0; padding: 16px; display: flex; align-items: flex-start;">
@@ -25,6 +39,7 @@
                 <div>
                     <h4 style="font-size: 20px; font-weight: 600; color: #1e40af; margin: 0 0 8px 0;">Learning Objectives</h4>
                     <ul style="color: #1d4ed8; margin: 0; padding-left: 20px; line-height: 1.5;">
+                        <!-- INSTRUCTION: Replace these with your specific learning objectives for the week. -->
                         <li>Objective 1 for the week.</li>
                         <li>Objective 2 for the week.</li>
                         <li>Objective 3 for the week.</li>
@@ -32,6 +47,7 @@
                 </div>
             </div>
         </div>
+        <!-- Right Column -->
         <div style="flex: 1 1 250px; padding-left: 16px; padding-right: 16px; min-width: 300px;">
             <div style="background-color: #f0fdf4; border-left: 4px solid #22c55e; border-radius: 0 4px 4px 0; padding: 16px;">
                 <div style="display: flex; align-items: center; margin-bottom: 16px;">
@@ -39,6 +55,7 @@
                     <h4 style="font-size: 20px; font-weight: 600; color: #166534; margin: 0;">To-Do This Week</h4>
                 </div>
                 <ul style="list-style-type: none; padding: 0; margin: 0; line-height: 1.7; color: #14532d;">
+                    <!-- INSTRUCTION: Update this list with your weekly tasks. Add or remove items as needed. -->
                     <li style="margin-bottom: 12px; display: flex; align-items: flex-start;">
                         <div style="width: 24px; font-size: 18px; margin-right: 12px;">📚</div>
                         <div><strong style="display: block;">Read:</strong><span style="font-size: 14px;">[Reading Assignment Details]</span></div>
@@ -56,32 +73,85 @@
         </div>
     </div>
 
+    <!-- In-Class Agenda Section -->
     <div style="border-top: 1px solid #e5e7eb; padding-top: 24px;">
         <h3 style="font-size: 24px; font-weight: 600; color: #374151; margin-top: 0; margin-bottom: 16px;">In-Class Agenda</h3>
         <div style="display: flex; flex-wrap: wrap;">
+            <!-- Day 1 -->
             <div style="flex: 1 1 400px; min-width: 300px; background-color: #f9fafb; padding: 16px; border-radius: 6px; border: 1px solid #e5e7eb; margin: 8px;">
-                <h4 style="font-size: 20px; font-weight: bold; color: #1f2937; margin: 0 0 12px 0;">
-                    🗓️ Monday, August 26
-                </h4>
-                <details style="margin-bottom: 12px; background-color: #ffffff; border-radius: 4px; border: 1px solid #e5e7eb;">
-                    <summary style="cursor: pointer; font-weight: 600; padding: 12px; color: #374151;">🧠 Warm-up: Daily Debugging</summary>
-                    <div style="padding: 0 12px 12px 12px; border-top: 1px solid #e5e7eb; color: #4b5563; font-size: 14px;">
-                        <p><strong>Prompt:</strong> Find and fix the syntax error in the provided Rust snippet.</p>
-                        <p><a href="#" style="color: #2563eb;">Link to Warm-up Assignment</a></p>
-                    </div>
-                </details>
-                <details style="margin-bottom: 12px; background-color: #ffffff; border-radius: 4px; border: 1px solid #e5e7eb;">
-                    <summary style="cursor: pointer; font-weight: 600; padding: 12px; color: #374151;">👥 Activity: The 5-Minute Syllabus</summary>
-                    <div style="padding: 0 12px 12px 12px; border-top: 1px solid #e5e7eb; color: #4b5563; font-size: 14px;">
-                        <p>A brief, high-energy overview of the course philosophy, structure, and expectations.</p>
-                    </div>
-                </details>
-                 <details style="margin-bottom: 12px; background-color: #ffffff; border-radius: 4px; border: 1px solid #e5e7eb;">
-                    <summary style="cursor: pointer; font-weight: 600; padding: 12px; color: #374151;">🧑‍💻 Lab: Guided Codespaces Workshop</summary>
-                    <div style="padding: 0 12px 12px 12px; border-top: 1px solid #e5e7eb; color: #4b5563; font-size: 14px;">
-                        <p>A hands-on, follow-along lab to ensure every student can confidently launch, use, and save work within the GitHub Codespaces environment.</p>
-                    </div>
-                </details>
-                <details style="margin-bottom: 12px; background-color: #ffffff; border-radius: 4px; border: 1px solid #e5e7eb;">
+                <h3 style="font-size: 20px; color: #1f2937; margin: 0 0 12px 0;">
+                    <!-- INSTRUCTION: Update with the day and date -->
+                    🗓️ [Day of Week], [Date]
+                </h3>
+                <div style="margin-bottom: 16px;">
+                    <h4 style="color: #374151; margin: 0 0 4px 0;">🧠 Warm-up</h4>
+                    <ul style="color: #4b5563; margin: 0; padding-left: 20px; font-size: 14px; line-height: 1.5;">
+                        <li><a href="#" style="color: #2563eb;">Daily Debugging Challenge</a></li>
+                    </ul>
+                </div>
+                <div style="margin-bottom: 16px;">
+                    <h4 style="color: #374151; margin: 0 0 4px 0;">👥 Conceptual Learning & Activities</h4>
+                    <ul style="color: #4b5563; margin: 0; padding-left: 20px; font-size: 14px; line-height: 1.5;">
+                        <!-- INSTRUCTION: List the activities for the first class meeting of the week. -->
+                        <li>Activity 1</li>
+                        <li>Activity 2</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="color: #374151; margin: 0 0 4px 0;">🧑‍💻 In-Class Lab</h4>
+                    <ul style="color: #4b5563; margin: 0; padding-left: 20px; font-size: 14px; line-height: 1.5;">
+                        <li>Lab Activity for Day 1</li>
+                    </ul>
+                </div>
+                                 <details style="margin-bottom: 12px; background-color: #ffffff; border-radius: 4px; border: 1px solid #e5e7eb;">
                     <summary style="cursor: pointer; font-weight: 600; padding: 12px; color: #374151;">📚 New Vocabulary</summary>
                     <div style="padding: 12px; border-top: 1px solid #e5e7eb; color: #4b5563; font-size: 14px;">
+                        <dl>
+                            <dt style="font-weight: 600; color: #374151;">[Vocabulary Term 1]</dt>
+                            <dd style="margin-left: 20px; margin-bottom: 8px;">[Definition for Term 1]</dd>
+                            <dt style="font-weight: 600; color: #374151;">[Vocabulary Term 2]</dt>
+                            <dd style="margin-left: 20px; margin-bottom: 8px;">[Definition for Term 2]</dd>
+                            </dl>
+                    </div>
+                </details>
+            </div>
+            <!-- Day 2 -->
+            <div style="flex: 1 1 400px; min-width: 300px; background-color: #f9fafb; padding: 16px; border-radius: 6px; border: 1px solid #e5e7eb; margin: 8px;">
+                <h3 style="font-size: 20px; color: #1f2937; margin: 0 0 12px 0;"><!-- INSTRUCTION: Update with the day and date -->
+                    🗓️ [Day of Week], [Date]
+                </h3>
+                <div style="margin-bottom: 16px;">
+                    <h4 style="color: #374151; margin: 0 0 4px 0;">🧠 Warm-up</h4>
+                    <ul style="color: #4b5563; margin: 0; padding-left: 20px; font-size: 14px; line-height: 1.5;">
+                        <li><a href="#" style="color: #2563eb;">Daily Debugging Challenge</a></li>
+                    </ul>
+                </div>
+                <div style="margin-bottom: 16px;">
+                    <h4 style="color: #374151; margin: 0 0 4px 0;">👥 Conceptual Learning & Activities</h4>
+                    <ul style="color: #4b5563; margin: 0; padding-left: 20px; font-size: 14px; line-height: 1.5;">
+                        <!-- INSTRUCTION: List the activities for the second class meeting of the week. -->
+                        <li>Activity 3</li>
+                        <li>Activity 4</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="color: #374151; margin: 0 0 4px 0;">🧑‍💻 In-Class Lab</h4>
+                    <ul style="color: #4b5563; margin: 0; padding-left: 20px; font-size: 14px; line-height: 1.5;">
+                        <li>Lab Activity for Day 2</li>
+                    </ul>
+                </div>
+                                 <details style="margin-bottom: 12px; background-color: #ffffff; border-radius: 4px; border: 1px solid #e5e7eb;">
+                    <summary style="cursor: pointer; font-weight: 600; padding: 12px; color: #374151;">📚 New Vocabulary</summary>
+                    <div style="padding: 12px; border-top: 1px solid #e5e7eb; color: #4b5563; font-size: 14px;">
+                        <dl>
+                            <dt style="font-weight: 600; color: #374151;">[Vocabulary Term 1]</dt>
+                            <dd style="margin-left: 20px; margin-bottom: 8px;">[Definition for Term 1]</dd>
+                            <dt style="font-weight: 600; color: #374151;">[Vocabulary Term 2]</dt>
+                            <dd style="margin-left: 20px; margin-bottom: 8px;">[Definition for Term 2]</dd>
+                            </dl>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </div>
+</div>
