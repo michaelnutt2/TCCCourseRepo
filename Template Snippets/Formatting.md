@@ -27,6 +27,25 @@ Replace the emoji with a relevant emoji
 </h3>
 ```
 
+## Side By Side Boxes
+
+```html
+<div style="display: flex; flex-wrap: wrap; margin-top: 16px;">
+    <div style="flex: 1; min-width: 300px; padding: 8px;">
+        <div style="border: 1px solid #e5e7eb; border-radius: 6px; padding: 16px; height: 100%;">
+            <h4 style="margin-top: 0; color: #1f2937;">TITLE</h4>
+            <p style="font-size: 14px; color: #4b5563; line-height: 1.6;">TEXT</p>
+        </div>
+    </div>
+    <div style="flex: 1; min-width: 300px; padding: 8px;">
+        <div style="border: 1px solid #e5e7eb; border-radius: 6px; padding: 16px; height: 100%;">
+            <h4 style="margin-top: 0; color: #1f2937;">TITLE</h4>
+            <p style="font-size: 14px; color: #4b5563; line-height: 1.6;">TEXT</p>
+        </div>
+    </div>
+</div>
+```
+
 ## Blue Callout Box
 
 ```html
