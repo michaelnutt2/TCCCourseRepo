@@ -55,7 +55,7 @@ Replace the emoji with a relevant emoji
 
 ```html
 <div style="border-top: 1px solid #e5e7eb; padding-top: 24px; display: flex; justify-content: space-between; align-items: center;">
-  <a style="background-color: #4b5563; color: #ffffff; text-decoration: none; padding: 12px 24px; border-radius: 6px; display: inline-block;" href="LINK" data-api-endpoint="LINK" data-api-returntype="Page"> &larr; Return to Week Overview </a>
-  <a style="background-color: #1f2937; color: #ffffff; text-decoration: none; padding: 12px 24px; border-radius: 6px; display: inline-block;" href="LINK" data-api-endpoint="LINK" data-api-returntype="Page"> Continue to NEXT PAGE &rarr; </a>
+  <a style="background-color: #4b5563; color: #ffffff; text-decoration: none; padding: 12px 24px; border-radius: 6px; display: inline-block;" title="TEXT" href="/courses/<COURSE_ID>/pages/<PAGE-NAME>" data-course-type="wikiPages" data-published="true"> &larr; Return to Week Overview </a>
+  <a style="background-color: #4b5563; color: #ffffff; text-decoration: none; padding: 12px 24px; border-radius: 6px; display: inline-block;" title="TEXT" href="/courses/<COURSE_ID>/pages/<PAGE-NAME>" data-course-type="wikiPages" data-published="true"> Continue to NEXT PAGE &rarr; </a>
 </div>
 ```
