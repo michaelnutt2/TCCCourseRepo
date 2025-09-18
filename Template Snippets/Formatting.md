@@ -46,6 +46,15 @@ Replace the emoji with a relevant emoji
 </div>
 ```
 
+## Grey Callout Box
+
+```html
+<div style="margin-bottom: 32px; background-color: #f9fafb; padding: 24px; border-radius: 6px; border: 1px solid #e5e7eb;">
+    <h3 style="font-size: 24px; color: #374151; margin-top: 0; margin-bottom: 16px;">TEXT</h3>
+    <p style="color: #4b5563; line-height: 1.6;">TEXT</p>
+</div>
+```
+
 ## Blue Callout Box
 
 ```html
