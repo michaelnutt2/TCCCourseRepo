@@ -1,0 +1,18 @@
+autoinstall:
+  version: 1
+  refresh-installer:
+    update: true
+    channel: latest/edge
+  source:
+    search_drivers: true
+    id: ubuntu-desktop
+  identity:
+    username: admin
+    password: "$1$pRSL3Xck$NTdIvX4l.pfetOFQmdzQH1"
+    hostname: ITNW-1425
+  packages:
+    - vim
+    - git
+  timezone: "America/Chicago"
+  updates: all
+  shutdown: poweroff
