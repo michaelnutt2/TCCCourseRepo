@@ -13,6 +13,7 @@ autoinstall:
   packages:
     - vim
     - git
+    - net-tools
   timezone: "America/Chicago"
   updates: all
   shutdown: poweroff
