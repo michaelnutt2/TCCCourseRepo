@@ -1,0 +1,45 @@
+<div style="max-width: 900px; margin: auto; background-color: white; border: 1px solid #d1d1d1; border-radius: 6px; font-family: sans-serif; padding: 32px;">
+    <div style="margin-bottom: 32px; background-color: #f9fafb; padding: 24px; border-radius: 6px; border: 1px solid #e5e7eb;">
+        <h3 style="font-size: 24px; color: #374151; margin-top: 0; margin-bottom: 16px;">🎥 Required Video Series</h3>
+        <p style="color: #4b5563; line-height: 1.6;">Please watch the following videos in order to prepare for this week's class.</p>
+    </div>
+    <div style="max-width: 100%; overflow-x: auto;">
+        <table style="width: 100%; border-collapse: collapse; border: 1px solid #e5e7eb; font-size: 14px;">
+            <caption>Videos</caption>
+            <thead style="background-color: #f9fafb; text-align: left;">
+                <tr>
+                    <th style="padding: 12px; border-bottom: 2px solid #e5e7eb; width: 10%;" scope="col">#</th>
+                    <th style="padding: 12px; border-bottom: 2px solid #e5e7eb;" scope="col">Topic</th>
+                    <th style="padding: 12px; border-bottom: 2px solid #e5e7eb; width: 20%;" scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="border-bottom: 1px solid #e5e7eb;">
+                    <td style="padding: 12px; font-weight: 600; text-align: center;">1</td>
+                    <td style="padding: 12px;">TOPIC</td>
+                    <td style="padding: 12px;">Watch Now</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #e5e7eb; background-color: #f9fafb;">
+                    <td style="padding: 12px; font-weight: 600; text-align: center;">2</td>
+                    <td style="padding: 12px;">TOPIC</td>
+                    <td style="padding: 12px;">Watch Now</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #e5e7eb;">
+                    <td style="padding: 12px; font-weight: 600; text-align: center;">3</td>
+                    <td style="padding: 12px;">TOPIC</td>
+                    <td style="padding: 12px;">Watch Now</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #e5e7eb; background-color: #f9fafb;">
+                    <td style="padding: 12px; font-weight: 600; text-align: center;">4</td>
+                    <td style="padding: 12px;">TOPIC</td>
+                    <td style="padding: 12px;">Watch Now</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #e5e7eb;">
+                    <td style="padding: 12px; font-weight: 600; text-align: center;">5</td>
+                    <td style="padding: 12px;">TOPIC</td>
+                    <td style="padding: 12px;">Watch Now</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
