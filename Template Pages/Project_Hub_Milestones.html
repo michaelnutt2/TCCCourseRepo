@@ -5,6 +5,7 @@
      4. Switch back to the Rich Content Editor to fill in the placeholder text.
      5. Update all href="#" links to point to the actual assignment pages.
      6. Add or remove Milestone cards as needed for your project.              -->
+
 <div style="max-width: 900px; margin: auto; background-color: white; border: 1px solid #d1d1d1; border-radius: 6px; font-family: sans-serif; padding: 32px;">
 
     <!-- Header Section -->
@@ -52,40 +53,39 @@
         <!-- Timeline / At-a-Glance -->
         <div style="margin-bottom: 32px;">
             <h3 style="font-size: 24px; font-weight: 600; color: #374151; margin-top: 0; margin-bottom: 16px;">📅 Project Timeline</h3>
-            <div style="background-color: #f9fafb; border: 1px solid #e5e7eb; border-radius: 6px; overflow: hidden;">
-                <!-- Table Header -->
-                <div style="display: flex; background-color: #1f2937; padding: 10px 16px; font-weight: 600; color: #ffffff; font-size: 14px;">
-                    <div style="flex: 0 0 120px;">Due Date</div>
-                    <div style="flex: 1;">Milestone / Deliverable</div>
-                    <div style="flex: 0 0 80px; text-align: center;">Points</div>
-                </div>
-                <!-- INSTRUCTION: Add one row per milestone. Copy/paste the row block to add more. Alternate row colors are handled by background-color below. -->
-
-                <!-- Row 1 -->
-                <div style="display: flex; align-items: center; padding: 10px 16px; border-bottom: 1px solid #e5e7eb; background-color: #ffffff; font-size: 14px; color: #374151;">
-                    <div style="flex: 0 0 120px; color: #6b7280;">[Date]</div>
-                    <div style="flex: 1;"><a href="#milestone-1" style="color: #2563eb; font-weight: 500;">🚩 Milestone 1: [Title]</a></div>
-                    <div style="flex: 0 0 80px; text-align: center; color: #6b7280;">[xx] pts</div>
-                </div>
-                <!-- Row 2 -->
-                <div style="display: flex; align-items: center; padding: 10px 16px; border-bottom: 1px solid #e5e7eb; background-color: #f9fafb; font-size: 14px; color: #374151;">
-                    <div style="flex: 0 0 120px; color: #6b7280;">[Date]</div>
-                    <div style="flex: 1;"><a href="#milestone-2" style="color: #2563eb; font-weight: 500;">🚩 Milestone 2: [Title]</a></div>
-                    <div style="flex: 0 0 80px; text-align: center; color: #6b7280;">[xx] pts</div>
-                </div>
-                <!-- Row 3 -->
-                <div style="display: flex; align-items: center; padding: 10px 16px; border-bottom: 1px solid #e5e7eb; background-color: #ffffff; font-size: 14px; color: #374151;">
-                    <div style="flex: 0 0 120px; color: #6b7280;">[Date]</div>
-                    <div style="flex: 1;"><a href="#milestone-3" style="color: #2563eb; font-weight: 500;">🚩 Milestone 3: [Title]</a></div>
-                    <div style="flex: 0 0 80px; text-align: center; color: #6b7280;">[xx] pts</div>
-                </div>
-                <!-- Row 4 — Final Deliverable -->
-                <div style="display: flex; align-items: center; padding: 10px 16px; background-color: #fef9c3; font-size: 14px; color: #374151; font-weight: 600;">
-                    <div style="flex: 0 0 120px; color: #854d0e;">[Date]</div>
-                    <div style="flex: 1;"><a href="#final" style="color: #92400e;">🏁 Final Deliverable: [Title]</a></div>
-                    <div style="flex: 0 0 80px; text-align: center; color: #854d0e;">[xx] pts</div>
-                </div>
-            </div>
+            <!-- INSTRUCTION: Add one <tr> per milestone. Copy/paste a row to add more. The final deliverable row uses amber highlighting to stand out. -->
+            <table style="width: 100%; border-collapse: collapse; font-size: 14px; font-family: sans-serif;">
+                <thead>
+                    <tr>
+                        <th style="background-color: #1f2937; color: #ffffff; text-align: left; padding: 10px 16px; font-weight: 600; width: 130px;">Due Date</th>
+                        <th style="background-color: #1f2937; color: #ffffff; text-align: left; padding: 10px 16px; font-weight: 600;">Milestone / Deliverable</th>
+                        <th style="background-color: #1f2937; color: #ffffff; text-align: center; padding: 10px 16px; font-weight: 600; width: 90px;">Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 10px 16px; border-bottom: 1px solid #e5e7eb; color: #6b7280; background-color: #ffffff;">[Date]</td>
+                        <td style="padding: 10px 16px; border-bottom: 1px solid #e5e7eb; background-color: #ffffff;"><a href="#milestone-1" style="color: #2563eb; font-weight: 500;">🚩 Milestone 1: [Title]</a></td>
+                        <td style="padding: 10px 16px; border-bottom: 1px solid #e5e7eb; text-align: center; color: #6b7280; background-color: #ffffff;">[xx] pts</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px 16px; border-bottom: 1px solid #e5e7eb; color: #6b7280; background-color: #f9fafb;">[Date]</td>
+                        <td style="padding: 10px 16px; border-bottom: 1px solid #e5e7eb; background-color: #f9fafb;"><a href="#milestone-2" style="color: #2563eb; font-weight: 500;">🚩 Milestone 2: [Title]</a></td>
+                        <td style="padding: 10px 16px; border-bottom: 1px solid #e5e7eb; text-align: center; color: #6b7280; background-color: #f9fafb;">[xx] pts</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px 16px; border-bottom: 1px solid #e5e7eb; color: #6b7280; background-color: #ffffff;">[Date]</td>
+                        <td style="padding: 10px 16px; border-bottom: 1px solid #e5e7eb; background-color: #ffffff;"><a href="#milestone-3" style="color: #2563eb; font-weight: 500;">🚩 Milestone 3: [Title]</a></td>
+                        <td style="padding: 10px 16px; border-bottom: 1px solid #e5e7eb; text-align: center; color: #6b7280; background-color: #ffffff;">[xx] pts</td>
+                    </tr>
+                    <!-- Final Deliverable Row — amber highlight -->
+                    <tr>
+                        <td style="padding: 10px 16px; color: #854d0e; background-color: #fef9c3; font-weight: 600;">[Date]</td>
+                        <td style="padding: 10px 16px; background-color: #fef9c3; font-weight: 600;"><a href="#final" style="color: #92400e;">🏁 Final Deliverable: [Title]</a></td>
+                        <td style="padding: 10px 16px; text-align: center; color: #854d0e; background-color: #fef9c3; font-weight: 600;">[xx] pts</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
         <!-- Milestone Cards -->
@@ -210,39 +210,45 @@
         <!-- Grading Breakdown (optional) -->
         <div style="margin-bottom: 32px;">
             <h3 style="font-size: 24px; font-weight: 600; color: #374151; margin-top: 0; margin-bottom: 16px;">📊 Grading Breakdown</h3>
-            <div style="background-color: #f9fafb; border: 1px solid #e5e7eb; border-radius: 6px; overflow: hidden;">
-                <div style="display: flex; background-color: #1f2937; padding: 10px 16px; font-weight: 600; color: #ffffff; font-size: 14px;">
-                    <div style="flex: 1;">Component</div>
-                    <div style="flex: 0 0 80px; text-align: center;">Points</div>
-                    <div style="flex: 0 0 80px; text-align: center;">% of Grade</div>
-                </div>
-                <!-- INSTRUCTION: Fill in grading rows. Copy/paste a row to add more. -->
-                <div style="display: flex; padding: 10px 16px; border-bottom: 1px solid #e5e7eb; background-color: #ffffff; font-size: 14px; color: #374151;">
-                    <div style="flex: 1;">Milestone 1: [Title]</div>
-                    <div style="flex: 0 0 80px; text-align: center;">[xx]</div>
-                    <div style="flex: 0 0 80px; text-align: center;">[x]%</div>
-                </div>
-                <div style="display: flex; padding: 10px 16px; border-bottom: 1px solid #e5e7eb; background-color: #f9fafb; font-size: 14px; color: #374151;">
-                    <div style="flex: 1;">Milestone 2: [Title]</div>
-                    <div style="flex: 0 0 80px; text-align: center;">[xx]</div>
-                    <div style="flex: 0 0 80px; text-align: center;">[x]%</div>
-                </div>
-                <div style="display: flex; padding: 10px 16px; border-bottom: 1px solid #e5e7eb; background-color: #ffffff; font-size: 14px; color: #374151;">
-                    <div style="flex: 1;">Milestone 3: [Title]</div>
-                    <div style="flex: 0 0 80px; text-align: center;">[xx]</div>
-                    <div style="flex: 0 0 80px; text-align: center;">[x]%</div>
-                </div>
-                <div style="display: flex; padding: 10px 16px; border-bottom: 1px solid #e5e7eb; background-color: #fef9c3; font-size: 14px; color: #374151; font-weight: 600;">
-                    <div style="flex: 1;">Final Deliverable: [Title]</div>
-                    <div style="flex: 0 0 80px; text-align: center;">[xx]</div>
-                    <div style="flex: 0 0 80px; text-align: center;">[x]%</div>
-                </div>
-                <div style="display: flex; padding: 10px 16px; background-color: #1f2937; font-size: 14px; color: #ffffff; font-weight: 700;">
-                    <div style="flex: 1;">Total</div>
-                    <div style="flex: 0 0 80px; text-align: center;">[xxx]</div>
-                    <div style="flex: 0 0 80px; text-align: center;">100%</div>
-                </div>
-            </div>
+            <!-- INSTRUCTION: Fill in each row. Copy/paste a <tr> to add more components. -->
+            <table style="width: 100%; border-collapse: collapse; font-size: 14px; font-family: sans-serif;">
+                <thead>
+                    <tr>
+                        <th style="background-color: #1f2937; color: #ffffff; text-align: left; padding: 10px 16px; font-weight: 600;">Component</th>
+                        <th style="background-color: #1f2937; color: #ffffff; text-align: center; padding: 10px 16px; font-weight: 600; width: 90px;">Points</th>
+                        <th style="background-color: #1f2937; color: #ffffff; text-align: center; padding: 10px 16px; font-weight: 600; width: 100px;">% of Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 10px 16px; border-bottom: 1px solid #e5e7eb; color: #374151; background-color: #ffffff;">Milestone 1: [Title]</td>
+                        <td style="padding: 10px 16px; border-bottom: 1px solid #e5e7eb; text-align: center; color: #374151; background-color: #ffffff;">[xx]</td>
+                        <td style="padding: 10px 16px; border-bottom: 1px solid #e5e7eb; text-align: center; color: #374151; background-color: #ffffff;">[x]%</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px 16px; border-bottom: 1px solid #e5e7eb; color: #374151; background-color: #f9fafb;">Milestone 2: [Title]</td>
+                        <td style="padding: 10px 16px; border-bottom: 1px solid #e5e7eb; text-align: center; color: #374151; background-color: #f9fafb;">[xx]</td>
+                        <td style="padding: 10px 16px; border-bottom: 1px solid #e5e7eb; text-align: center; color: #374151; background-color: #f9fafb;">[x]%</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px 16px; border-bottom: 1px solid #e5e7eb; color: #374151; background-color: #ffffff;">Milestone 3: [Title]</td>
+                        <td style="padding: 10px 16px; border-bottom: 1px solid #e5e7eb; text-align: center; color: #374151; background-color: #ffffff;">[xx]</td>
+                        <td style="padding: 10px 16px; border-bottom: 1px solid #e5e7eb; text-align: center; color: #374151; background-color: #ffffff;">[x]%</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px 16px; border-bottom: 1px solid #e5e7eb; color: #78350f; background-color: #fef9c3; font-weight: 600;">Final Deliverable: [Title]</td>
+                        <td style="padding: 10px 16px; border-bottom: 1px solid #e5e7eb; text-align: center; color: #78350f; background-color: #fef9c3; font-weight: 600;">[xx]</td>
+                        <td style="padding: 10px 16px; border-bottom: 1px solid #e5e7eb; text-align: center; color: #78350f; background-color: #fef9c3; font-weight: 600;">[x]%</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td style="padding: 10px 16px; background-color: #1f2937; color: #ffffff; font-weight: 700;">Total</td>
+                        <td style="padding: 10px 16px; text-align: center; background-color: #1f2937; color: #ffffff; font-weight: 700;">[xxx]</td>
+                        <td style="padding: 10px 16px; text-align: center; background-color: #1f2937; color: #ffffff; font-weight: 700;">100%</td>
+                    </tr>
+                </tfoot>
+            </table>
         </div>
 
         <!-- Resources Section -->
