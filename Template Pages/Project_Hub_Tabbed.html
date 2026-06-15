@@ -1,0 +1,214 @@
+<!-- =============================================
+     PROJECT HUB — Tabbed Layout (Canvas jQuery UI Tabs)
+     INSTRUCTIONS:
+     1. Create a new Page in Canvas.
+     2. Switch to the HTML Editor.
+     3. Paste this entire block.
+     4. Fill in placeholders — all-caps words are yours to replace.
+     5. Add or remove milestone tabs by duplicating the <li> + <div> pairs.
+     ============================================= -->
+
+<div style="max-width: 900px; margin: auto; background-color: white; border: 1px solid #d1d1d1; border-radius: 6px; font-family: sans-serif; padding: 32px;">
+
+    <!-- Header -->
+    <div style="display: flex; align-items: center; border-bottom: 1px solid #e5e7eb; padding-bottom: 16px; margin-bottom: 24px;">
+        <div style="width: 96px; height: 96px; background-color: #e5e7eb; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 50px; color: #6b7280; flex-shrink: 0;">
+            🚀
+        </div>
+        <div style="margin-left: 24px;">
+            <h2 style="font-size: 36px; font-weight: bold; color: #1f2937; margin: 0;">
+                [Project Title]
+            </h2>
+            <p style="font-size: 18px; color: #4b5563; margin: 4px 0 0 0;">
+                [A brief one-sentence description of the project and its overall goal]
+            </p>
+        </div>
+    </div>
+
+    <!-- Tabbed Content -->
+    <div class="enhanceable_content tabs">
+        <ul>
+            <li><a href="#tab-overview">🗺️ Overview</a></li>
+            <li><a href="#tab-timeline">📅 Timeline</a></li>
+            <li><a href="#tab-m1">🚩 Milestone 1</a></li>
+            <li><a href="#tab-m2">🚩 Milestone 2</a></li>
+            <li><a href="#tab-m3">🚩 Milestone 3</a></li>
+            <li><a href="#tab-final">🏁 Final</a></li>
+            <li><a href="#tab-resources">📚 Resources</a></li>
+        </ul>
+
+        <!-- TAB: Overview -->
+        <div id="tab-overview">
+            <p style="color: #4b5563; line-height: 1.6; margin: 0 0 20px 0;">
+                <!-- INSTRUCTION: Describe the project's purpose, what students produce, and how it connects to course goals. -->
+                <em>[Project overview paragraph goes here.]</em>
+            </p>
+            <!-- Learning Objectives callout -->
+            <div style="background-color: #eff6ff; border-left: 4px solid #60a5fa; border-radius: 0 4px 4px 0; padding: 16px;">
+                <h4 style="font-size: 18px; font-weight: 600; color: #1e40af; margin: 0 0 8px 0;">🎯 Learning Objectives</h4>
+                <p style="color: #1d4ed8; margin: 0 0 10px 0;">By completing this project, you will be able to:</p>
+                <ul style="color: #1d4ed8; margin: 0; padding-left: 20px; line-height: 1.7;">
+                    <!-- INSTRUCTION: List 3–5 specific, measurable objectives. -->
+                    <li>Learning Objective 1</li>
+                    <li>Learning Objective 2</li>
+                    <li>Learning Objective 3</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- TAB: Timeline -->
+        <div id="tab-timeline">
+            <table style="width: 100%; border-collapse: collapse; font-size: 14px;" summary="Project milestone due dates and point values">
+                <caption style="text-align: left; font-size: 16px; font-weight: 600; color: #374151; margin-bottom: 8px; padding-bottom: 8px;">Project Timeline at a Glance</caption>
+                <thead>
+                    <tr style="background-color: #1f2937; color: #ffffff;">
+                        <th scope="col" style="padding: 10px 16px; text-align: left; font-weight: 600;">Due Date</th>
+                        <th scope="col" style="padding: 10px 16px; text-align: left; font-weight: 600;">Milestone / Deliverable</th>
+                        <th scope="col" style="padding: 10px 16px; text-align: center; font-weight: 600;">Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- INSTRUCTION: One row per milestone. Alternate #ffffff / #f9fafb for row backgrounds. -->
+                    <tr style="background-color: #ffffff; border-bottom: 1px solid #e5e7eb;">
+                        <td style="padding: 10px 16px; color: #6b7280;">[Date]</td>
+                        <td style="padding: 10px 16px;"><a href="#tab-m1" style="color: #2563eb; font-weight: 500;">🚩 Milestone 1: [Title]</a></td>
+                        <td style="padding: 10px 16px; text-align: center; color: #6b7280;">[xx] pts</td>
+                    </tr>
+                    <tr style="background-color: #f9fafb; border-bottom: 1px solid #e5e7eb;">
+                        <td style="padding: 10px 16px; color: #6b7280;">[Date]</td>
+                        <td style="padding: 10px 16px;"><a href="#tab-m2" style="color: #2563eb; font-weight: 500;">🚩 Milestone 2: [Title]</a></td>
+                        <td style="padding: 10px 16px; text-align: center; color: #6b7280;">[xx] pts</td>
+                    </tr>
+                    <tr style="background-color: #ffffff; border-bottom: 1px solid #e5e7eb;">
+                        <td style="padding: 10px 16px; color: #6b7280;">[Date]</td>
+                        <td style="padding: 10px 16px;"><a href="#tab-m3" style="color: #2563eb; font-weight: 500;">🚩 Milestone 3: [Title]</a></td>
+                        <td style="padding: 10px 16px; text-align: center; color: #6b7280;">[xx] pts</td>
+                    </tr>
+                    <tr style="background-color: #fef9c3; border-bottom: 1px solid #fde68a; font-weight: 600;">
+                        <td style="padding: 10px 16px; color: #854d0e;">[Date]</td>
+                        <td style="padding: 10px 16px;"><a href="#tab-final" style="color: #92400e;">🏁 Final Deliverable: [Title]</a></td>
+                        <td style="padding: 10px 16px; text-align: center; color: #854d0e;">[xx] pts</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr style="background-color: #1f2937; color: #ffffff; font-weight: 700;">
+                        <td style="padding: 10px 16px;" colspan="2">Total</td>
+                        <td style="padding: 10px 16px; text-align: center;">[xxx] pts</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <!-- TAB: Milestone 1 -->
+        <!-- INSTRUCTION: Duplicate this entire div block for each additional milestone. Update the id, title, date, points, description, and deliverables list. -->
+        <div id="tab-m1">
+            <div style="display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 16px;">
+                <div>
+                    <h4 style="font-size: 20px; font-weight: 700; color: #1f2937; margin: 0 0 4px 0;">🚩 Milestone 1: [Title]</h4>
+                    <p style="font-size: 14px; color: #6b7280; margin: 0;">Due: <strong style="color: #374151;">[Date]</strong> &nbsp;·&nbsp; [xx] points</p>
+                </div>
+                <a href="#" style="display: inline-block; background-color: #2563eb; color: #ffffff; font-size: 14px; font-weight: 600; padding: 8px 16px; border-radius: 6px; text-decoration: none; white-space: nowrap;">
+                    Go to Assignment →
+                </a>
+            </div>
+            <p style="color: #4b5563; line-height: 1.6; margin: 0 0 16px 0; font-size: 15px;">
+                <!-- INSTRUCTION: 1–2 sentences describing what students do and submit. -->
+                <em>[Description of what students will do and submit for this milestone.]</em>
+            </p>
+            <div style="background-color: #f9fafb; border: 1px solid #e5e7eb; border-radius: 4px; padding: 14px;">
+                <p style="font-size: 13px; font-weight: 600; color: #374151; margin: 0 0 8px 0;">Key Deliverables:</p>
+                <ul style="color: #4b5563; margin: 0; padding-left: 20px; font-size: 14px; line-height: 1.8;">
+                    <!-- INSTRUCTION: List specific items students must submit. -->
+                    <li>Deliverable item 1</li>
+                    <li>Deliverable item 2</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- TAB: Milestone 2 -->
+        <div id="tab-m2">
+            <div style="display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 16px;">
+                <div>
+                    <h4 style="font-size: 20px; font-weight: 700; color: #1f2937; margin: 0 0 4px 0;">🚩 Milestone 2: [Title]</h4>
+                    <p style="font-size: 14px; color: #6b7280; margin: 0;">Due: <strong style="color: #374151;">[Date]</strong> &nbsp;·&nbsp; [xx] points</p>
+                </div>
+                <a href="#" style="display: inline-block; background-color: #2563eb; color: #ffffff; font-size: 14px; font-weight: 600; padding: 8px 16px; border-radius: 6px; text-decoration: none; white-space: nowrap;">
+                    Go to Assignment →
+                </a>
+            </div>
+            <p style="color: #4b5563; line-height: 1.6; margin: 0 0 16px 0; font-size: 15px;">
+                <em>[Description of what students will do and submit for this milestone.]</em>
+            </p>
+            <div style="background-color: #f9fafb; border: 1px solid #e5e7eb; border-radius: 4px; padding: 14px;">
+                <p style="font-size: 13px; font-weight: 600; color: #374151; margin: 0 0 8px 0;">Key Deliverables:</p>
+                <ul style="color: #4b5563; margin: 0; padding-left: 20px; font-size: 14px; line-height: 1.8;">
+                    <li>Deliverable item 1</li>
+                    <li>Deliverable item 2</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- TAB: Milestone 3 -->
+        <div id="tab-m3">
+            <div style="display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 16px;">
+                <div>
+                    <h4 style="font-size: 20px; font-weight: 700; color: #1f2937; margin: 0 0 4px 0;">🚩 Milestone 3: [Title]</h4>
+                    <p style="font-size: 14px; color: #6b7280; margin: 0;">Due: <strong style="color: #374151;">[Date]</strong> &nbsp;·&nbsp; [xx] points</p>
+                </div>
+                <a href="#" style="display: inline-block; background-color: #2563eb; color: #ffffff; font-size: 14px; font-weight: 600; padding: 8px 16px; border-radius: 6px; text-decoration: none; white-space: nowrap;">
+                    Go to Assignment →
+                </a>
+            </div>
+            <p style="color: #4b5563; line-height: 1.6; margin: 0 0 16px 0; font-size: 15px;">
+                <em>[Description of what students will do and submit for this milestone.]</em>
+            </p>
+            <div style="background-color: #f9fafb; border: 1px solid #e5e7eb; border-radius: 4px; padding: 14px;">
+                <p style="font-size: 13px; font-weight: 600; color: #374151; margin: 0 0 8px 0;">Key Deliverables:</p>
+                <ul style="color: #4b5563; margin: 0; padding-left: 20px; font-size: 14px; line-height: 1.8;">
+                    <li>Deliverable item 1</li>
+                    <li>Deliverable item 2</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- TAB: Final Deliverable -->
+        <div id="tab-final">
+            <div style="display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 16px;">
+                <div>
+                    <h4 style="font-size: 20px; font-weight: 700; color: #78350f; margin: 0 0 4px 0;">🏁 Final Deliverable: [Title]</h4>
+                    <p style="font-size: 14px; color: #92400e; margin: 0;">Due: <strong>[Date]</strong> &nbsp;·&nbsp; [xx] points</p>
+                </div>
+                <a href="#" style="display: inline-block; background-color: #92400e; color: #ffffff; font-size: 14px; font-weight: 600; padding: 8px 16px; border-radius: 6px; text-decoration: none; white-space: nowrap;">
+                    Go to Assignment →
+                </a>
+            </div>
+            <!-- Amber deadline callout -->
+            <div style="background-color: #fef9c3; border-left: 4px solid #f59e0b; border-radius: 0 4px 4px 0; padding: 14px; margin-bottom: 16px;">
+                <p style="color: #78350f; font-weight: 600; margin: 0 0 4px 0;">⚠️ All previous milestones must be complete before submitting the final deliverable.</p>
+            </div>
+            <p style="color: #4b5563; line-height: 1.6; margin: 0 0 16px 0; font-size: 15px;">
+                <!-- INSTRUCTION: Describe the final deliverable and how it ties all milestones together. -->
+                <em>[Description of the final deliverable and what the finished product looks like.]</em>
+            </p>
+            <div style="background-color: #fef9c3; border: 1px solid #fde68a; border-radius: 4px; padding: 14px;">
+                <p style="font-size: 13px; font-weight: 600; color: #78350f; margin: 0 0 8px 0;">Key Deliverables:</p>
+                <ul style="color: #78350f; margin: 0; padding-left: 20px; font-size: 14px; line-height: 1.8;">
+                    <li>Deliverable item 1</li>
+                    <li>Deliverable item 2</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- TAB: Resources -->
+        <div id="tab-resources">
+            <ul style="color: #4b5563; margin: 0; padding-left: 20px; line-height: 2;">
+                <!-- INSTRUCTION: Add links to rubrics, readings, tools, or reference pages for the whole project. -->
+                <li><a href="#" style="color: #2563eb;">[Resource or Reading 1]</a></li>
+                <li><a href="#" style="color: #2563eb;">[Resource or Reading 2]</a></li>
+                <li><a href="#" style="color: #2563eb;">[Rubric: Project Title]</a></li>
+            </ul>
+        </div>
+
+    </div><!-- end .enhanceable_content.tabs -->
+
+</div><!-- end outer card -->
