@@ -1,0 +1,78 @@
+<!-- INSTRUCTIONS FOR USE:
+     1. Create a new page in your Canvas course for the module overview.
+     2. Switch to the HTML Editor view.
+     3. Copy and paste this entire block of code into the editor.
+     4. Switch back to the Rich Content Editor to fill in the placeholder text.
+     5. This template is MODULAR: the "Day Card" in the Daily Breakdown section can be
+        copy/pasted to add as many days as your module needs (2, 3, 4, etc.) or deleted
+        for shorter modules. Each Day Card should link to its own Daily Overview page.
+     6. Update every href="#" link to point to the actual Daily Overview pages,
+        assignments, and quizzes for this module.
+     7. Replace the webcomic IMAGE_URL and LINK_URL with your own comic, or delete the
+        entire "Webcomic" div if not needed — the introduction paragraph will then run
+        full-width automatically.                                                      -->
+<div style="max-width: 900px; margin: auto; background-color: white; border: 1px solid #d1d1d1; border-radius: 6px; font-family: sans-serif; padding: 32px;"><!-- Header Section -->
+    <div style="display: flex; align-items: center; border-bottom: 1px solid #e5e7eb; padding-bottom: 16px; margin-bottom: 24px;">
+        <div style="width: 96px; height: 96px; background-color: #e5e7eb; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 50px; color: #6b7280; flex-shrink: 0;"><!-- INSTRUCTION: Choose an emoji that represents your module's topic --> 🧩</div>
+        <div style="margin-left: 24px;">
+            <h2 style="font-size: 36px; font-weight: bold; color: #1f2937; margin: 0;">Module MODULE_NUMBER: MODULE_TITLE</h2>
+            <p style="font-size: 18px; color: #4b5563; margin: 4px 0 0 0;">DATE &ndash; DATE</p>
+        </div>
+    </div>
+    <!-- Main Content: Flexbox container for responsive columns -->
+    <div style="display: flex; flex-wrap: wrap; margin-bottom: 32px; margin-left: -16px; margin-right: -16px;"><!-- Left Column -->
+        <div style="flex: 2 1 500px; padding-left: 16px; padding-right: 16px; min-width: 300px;">
+            <h3 style="font-size: 24px; font-weight: 600; color: #374151; margin-top: 0; margin-bottom: 8px;">Introduction</h3>
+            <!-- Introduction paragraph with Webcomic floated right (text wraps around it) -->
+            <div style="overflow: hidden; margin-bottom: 8px;"><!-- Webcomic -->
+                <div style="float: right; width: 220px; margin-left: 20px; margin-bottom: 12px; background-color: #f9fafb; padding: 8px; border-radius: 4px; border: 1px solid #e5e7eb;"><a style="text-decoration: none; cursor: zoom-in;" title="Click to view larger version" href="LINK_URL" target="_blank" rel="noopener"> <img style="width: 100%; height: auto; border-radius: 2px; display: block;" src="IMAGE_URL" alt="Relevant Webcomic - Click for full size" /> </a></div>
+                <p style="color: #4b5563; line-height: 1.6; margin: 0;"><em>INTRODUCTION</em></p>
+            </div>
+        </div>
+        <!-- Right Column -->
+        <div style="flex: 1 1 250px; padding-left: 16px; padding-right: 16px; min-width: 300px;">
+            <div style="background-color: #f0fdf4; border-left: 4px solid #22c55e; border-radius: 0 4px 4px 0; padding: 16px;">
+                <div style="display: flex; align-items: center; margin-bottom: 16px;">
+                    <div style="font-size: 24px; margin-right: 12px;">📤</div>
+                    <h4 style="font-size: 20px; font-weight: 600; color: #166534; margin: 0;">Assignments</h4>
+                </div>
+                <ul style="list-style-type: none; padding: 0; margin: 0; line-height: 1.7; color: #14532d;"><!-- INSTRUCTION: This is a dedicated list of every gradable item due during this module
+                         (homework, quizzes, labs, projects, etc.). Copy/paste the <li> block below for
+                         each turn-in item, and delete this comment when finished. -->
+                    <li style="display: flex; align-items: flex-start;">
+                        <div><strong>NAME</strong><br /><span style="color: #027634; font-size: 10pt;">Due: 01/01 | <a style="color: #027634;" href="#" data-course-type="assignments">Submit Now &rarr;</a></span></div>
+                    </li>
+                    <li style="display: flex; align-items: flex-start;">
+                        <div><strong>NAME</strong><br /><span style="color: #027634; font-size: 10pt;">Due: 01/01 | <a style="color: #027634;" href="#" data-course-type="assignments">Submit Now &rarr;</a></span></div>
+                    </li>
+                    <li style="display: flex; align-items: flex-start;">
+                        <div><strong>NAME</strong><br /><span style="color: #027634; font-size: 10pt;">Due: 01/01 | <a style="color: #027634;" href="#" data-course-type="assignments">Submit Now &rarr;</a></span></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Daily Breakdown Section -->
+    <div style="border-top: 1px solid #e5e7eb; padding-top: 24px;">
+        <h3 style="font-size: 24px; font-weight: 600; color: #374151; margin-top: 0; margin-bottom: 16px;">📅 Daily Breakdown</h3>
+        <div style="display: flex; flex-direction: column; gap: 12px;"><!-- ================= DAY CARD (duplicate this entire div for each day in the module — full-width row, stacks cleanly for any number of days) ================= -->
+            <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; background-color: #f9fafb; padding: 16px 20px; border-radius: 6px; border: 1px solid #e5e7eb;">
+                <div>
+                    <h4 style="font-size: 18px; color: #1f2937; margin: 0 0 4px 0;">🗓️ Day 1: DAY, DATE</h4>
+                    <p style="color: #4b5563; font-size: 14px; line-height: 1.5; margin: 0;"><!-- INSTRUCTION: One short sentence describing the day's focus. --> DAY_FOCUS_SUMMARY</p>
+                </div>
+                <a style="flex-shrink: 0; display: inline-block; background-color: #2563eb; color: #ffffff; text-decoration: none; padding: 8px 16px; border-radius: 6px; font-weight: 600; font-size: 14px; white-space: nowrap;" href="#" data-course-type="wikiPages"> View Day 1 Agenda &rarr; </a>
+            </div>
+            <!-- ================= END DAY CARD ================= --> <!-- Day 2 (copy/paste the Day Card above and update the day number, date, summary, and link for as many days as this module needs — odd or even, each one just adds another full-width row) -->
+            <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; background-color: #f9fafb; padding: 16px 20px; border-radius: 6px; border: 1px solid #e5e7eb;">
+                <div>
+                    <h4 style="font-size: 18px; color: #1f2937; margin: 0 0 4px 0;">🗓️ Day 2: DAY, DATE</h4>
+                    <p style="color: #4b5563; font-size: 14px; line-height: 1.5; margin: 0;">DAY_FOCUS_SUMMARY</p>
+                </div>
+                <a style="flex-shrink: 0; display: inline-block; background-color: #2563eb; color: #ffffff; text-decoration: none; padding: 8px 16px; border-radius: 6px; font-weight: 600; font-size: 14px; white-space: nowrap;" href="#" data-course-type="wikiPages"> View Day 2 Agenda &rarr; </a>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Navigation -->
+    <div style="border-top: 1px solid #e5e7eb; padding-top: 24px; margin-top: 24px; display: flex; justify-content: space-between; align-items: center;"><a style="background-color: #4b5563; color: #ffffff; text-decoration: none; padding: 12px 24px; border-radius: 6px; display: inline-block;" title="Return to Previous Module" href="#" data-course-type="wikiPages"> &larr; Previous Module </a> <a style="background-color: #4b5563; color: #ffffff; text-decoration: none; padding: 12px 24px; border-radius: 6px; display: inline-block;" title="Go to Next Module" href="#" data-course-type="wikiPages"> Next Module &rarr; </a></div>
+</div>
