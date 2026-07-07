@@ -1,0 +1,98 @@
+<!--
+  ============================================================================
+  TEMPLATE: Exploration Activity
+  PURPOSE:  A non-graded, self-guided page where students explore a specific
+            tool and complete small tasks to become familiar with it.
+  HOW TO USE:
+    - Replace every ALL_CAPS token (e.g., TOOL_NAME) with your content.
+    - Read the INSTRUCTION comments before each block.
+    - Duplicate, remove, or reorder the "Exploration Task" blocks freely -
+      each one is self-contained and does not depend on the others.
+    - Canvas does not support <style> blocks, so all CSS is inline. Do not
+      move styling into a stylesheet.
+  ============================================================================
+-->
+<div style="max-width: 900px; margin: auto; background-color: white; border: 1px solid #d1d1d1; border-radius: 6px; font-family: sans-serif; padding: 32px;"><!-- HEADER --> <!-- INSTRUCTION: Swap the emoji for one that fits the tool. Update the title and one-line subtitle. -->
+    <div style="display: flex; align-items: center; border-bottom: 1px solid #e5e7eb; padding-bottom: 16px; margin-bottom: 24px;">
+        <div style="width: 96px; height: 96px; background-color: #e5e7eb; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 50px; color: #6b7280; flex-shrink: 0;">🧭</div>
+        <div style="margin-left: 24px;">
+            <h2 style="font-size: 36px; color: #1f2937; margin: 0;">EXPLORATION_TITLE</h2>
+            <p style="font-size: 18px; color: #4b5563; margin: 4px 0 0 0;">Getting comfortable with TOOL_NAME.</p>
+        </div>
+    </div>
+    <!-- OVERVIEW --> <!-- INSTRUCTION: Briefly explain what the tool is and why it's worth exploring. Keep it to a few sentences. -->
+    <div style="margin-bottom: 28px;">
+        <h3 style="font-size: 24px; color: #374151; margin-top: 0; margin-bottom: 16px; border-bottom: 2px solid #e5e7eb; padding-bottom: 8px;">🎯 Overview</h3>
+        <p style="color: #4b5563; line-height: 1.6; margin: 0;">OVERVIEW_PARAGRAPH. This is a low-stakes chance to poke around TOOL_NAME on your own - there's nothing to turn in. Work at your own pace and try things out.</p>
+    </div>
+    <!-- WHAT YOU'LL EXPLORE (green tips callout) --> <!-- INSTRUCTION: List 3-5 things the student should walk away knowing or being able to do. -->
+    <div style="background-color: #f0fdf4; border-left: 4px solid #22c55e; border-radius: 0 4px 4px 0; padding: 16px; margin-bottom: 28px;">
+        <h3 style="font-size: 20px; color: #166534; margin: 0 0 12px 0;">🧠 By the End, You'll Be Able To</h3>
+        <ul style="color: #14532d; margin: 0; padding-left: 20px; line-height: 1.9;">
+            <li>EXPLORATION_GOAL_1</li>
+            <li>EXPLORATION_GOAL_2</li>
+            <li>EXPLORATION_GOAL_3</li>
+        </ul>
+    </div>
+    <!-- GETTING ACCESS (blue info callout) --> <!-- INSTRUCTION: Tell students how to open/access the tool. Delete this block if not needed. -->
+    <div style="background-color: #eff6ff; border-left: 4px solid #60a5fa; border-radius: 0 4px 4px 0; padding: 16px; margin-bottom: 28px;">
+        <h3 style="font-size: 20px; color: #1d4ed8; margin: 0 0 12px 0;">🔑 Before You Start</h3>
+        <p style="color: #1d4ed8; margin: 0 0 8px 0; line-height: 1.6;">ACCESS_INSTRUCTIONS - where to find the tool, what to log in with, or what to install.</p>
+        <!-- INSTRUCTION: Optional link. Delete if unused. -->
+        <p style="color: #1d4ed8; margin: 0; line-height: 1.6;"><strong>Link:</strong> <a style="color: #2563eb;" href="TOOL_URL">TOOL_URL</a></p>
+    </div>
+    <!-- EXPLORATION TASKS --> <!-- INSTRUCTION: Each task below is one focused thing to try. Duplicate a task block to add more. -->
+    <div style="margin-bottom: 8px;">
+        <h3 style="font-size: 24px; color: #374151; margin-top: 0; margin-bottom: 16px; border-bottom: 2px solid #e5e7eb; padding-bottom: 8px;">🔍 Exploration Tasks</h3>
+        <!-- ===== Task block (duplicate this whole block per task) ===== -->
+        <div style="background-color: #f9fafb; padding: 20px; border-radius: 6px; border: 1px solid #e5e7eb; margin-bottom: 20px;">
+            <h4 style="font-size: 18px; color: #1f2937; margin: 0 0 12px 0;">Task 1: TASK_TITLE</h4>
+            <p style="color: #4b5563; line-height: 1.6; margin: 0 0 12px 0;">TASK_INTRO - a sentence framing what to try in this task.</p>
+            <!-- INSTRUCTION: Keep each step a single, plain sentence. Add or remove <li> items as needed. -->
+            <ol style="color: #4b5563; margin: 0; padding-left: 20px; line-height: 1.8;">
+                <li>TASK_STEP_1</li>
+                <li>TASK_STEP_2</li>
+                <li>TASK_STEP_3</li>
+            </ol>
+            <!-- INSTRUCTION: OPTIONAL command/code block. Delete if this task has no commands. -->
+            <div style="background-color: #f3f4f6; border-radius: 6px; padding: 16px; font-family: monospace; color: #1f2937; margin-top: 12px;">
+                <p style="margin: 0 0 8px 0;"># COMMENT_EXPLAINING_COMMAND</p>
+                <code>COMMAND_OR_CODE_HERE</code>
+            </div>
+            <!-- INSTRUCTION: OPTIONAL "notice this" prompt to focus their attention. Delete if not needed. -->
+            <div style="background-color: #eff6ff; border-left: 4px solid #60a5fa; border-radius: 0 4px 4px 0; padding: 12px 16px; margin-top: 12px;">
+                <p style="color: #1d4ed8; margin: 0; line-height: 1.6;">👀 <strong>Notice:</strong> WHAT_TO_PAY_ATTENTION_TO</p>
+            </div>
+        </div>
+        <!-- ===== End task block ===== --> <!-- ===== Second task block example (same structure, no optional extras) ===== -->
+        <div style="background-color: #f9fafb; padding: 20px; border-radius: 6px; border: 1px solid #e5e7eb; margin-bottom: 20px;">
+            <h4 style="font-size: 18px; color: #1f2937; margin: 0 0 12px 0;">Task 2: TASK_TITLE</h4>
+            <p style="color: #4b5563; line-height: 1.6; margin: 0 0 12px 0;">TASK_INTRO.</p>
+            <ol style="color: #4b5563; margin: 0; padding-left: 20px; line-height: 1.8;">
+                <li>TASK_STEP_1</li>
+                <li>TASK_STEP_2</li>
+            </ol>
+        </div>
+        <!-- ===== End second task block ===== -->
+    </div>
+    <!-- CHECK YOUR UNDERSTANDING (amber callout) --> <!-- INSTRUCTION: A few reflection prompts. These are for the student's own thinking - nothing is submitted. -->
+    <div style="background-color: #fffbeb; border-left: 4px solid #f59e0b; border-radius: 0 4px 4px 0; padding: 16px; margin-bottom: 28px;">
+        <h3 style="font-size: 20px; color: #b45309; margin: 0 0 12px 0;">❓ Check Your Understanding</h3>
+        <p style="color: #92400e; margin: 0 0 8px 0; line-height: 1.6;">Once you've explored, ask yourself:</p>
+        <ul style="color: #92400e; margin: 0; padding-left: 20px; line-height: 1.9;">
+            <li>REFLECTION_QUESTION_1</li>
+            <li>REFLECTION_QUESTION_2</li>
+            <li>REFLECTION_QUESTION_3</li>
+        </ul>
+    </div>
+    <!-- GOING FURTHER (optional stretch, green accordion) --> <!-- INSTRUCTION: OPTIONAL. Extra challenges for students who finish early. Delete the whole block if unused. -->
+    <div>
+        <h3 style="font-size: 24px; color: #374151; margin-top: 0; margin-bottom: 16px; border-bottom: 2px solid #e5e7eb; padding-bottom: 8px;">🚀 Going Further (Optional)</h3>
+        <details style="margin-bottom: 12px; background-color: #f9fafb; border-radius: 4px; border: 1px solid #e5e7eb;">
+            <summary style="cursor: pointer; font-size: 17px; padding: 14px 16px; color: #1f2937;">💡 Stretch Challenge</summary>
+            <div style="padding: 0 16px 16px 16px; border-top: 1px solid #e5e7eb; color: #4b5563;">
+                <p style="margin-top: 16px; line-height: 1.7;">STRETCH_CHALLENGE_DESCRIPTION</p>
+            </div>
+        </details>
+    </div>
+</div>
