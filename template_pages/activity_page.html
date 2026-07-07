@@ -1,0 +1,126 @@
+<!--
+  ============================================================================
+  TEMPLATE: Collaborative Activity
+  PURPOSE:  A non-graded page that provides on-screen instructions to support
+            a group / discussion-based in-class activity.
+  HOW TO USE:
+    - Replace every ALL_CAPS token with your content.
+    - Read the INSTRUCTION comments before each block.
+    - The page offers two interchangeable "activity body" options - a scenario
+      accordion and a research/assignment table. Keep whichever fits and
+      delete the other, or keep both.
+    - Canvas does not support <style> blocks, so all CSS is inline. Do not
+      move styling into a stylesheet.
+  ============================================================================
+-->
+<div style="max-width: 900px; margin: auto; background-color: white; border: 1px solid #d1d1d1; border-radius: 6px; font-family: sans-serif; padding: 32px;"><!-- HEADER --> <!-- INSTRUCTION: Swap the emoji, title, and one-line subtitle. -->
+    <div style="display: flex; align-items: center; border-bottom: 1px solid #e5e7eb; padding-bottom: 16px; margin-bottom: 24px;">
+        <div style="width: 96px; height: 96px; background-color: #e5e7eb; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 50px; color: #6b7280; flex-shrink: 0;">👥</div>
+        <div style="margin-left: 24px;">
+            <h2 style="font-size: 36px; color: #1f2937; margin: 0;">ACTIVITY_TITLE</h2>
+            <p style="font-size: 18px; color: #4b5563; margin: 4px 0 0 0;">A collaborative, small-group activity.</p>
+        </div>
+    </div>
+    <!-- OVERVIEW --> <!-- INSTRUCTION: Explain the goal of the activity and what groups are working toward. -->
+    <div style="margin-bottom: 28px;">
+        <h3 style="font-size: 24px; color: #374151; margin-top: 0; margin-bottom: 16px; border-bottom: 2px solid #e5e7eb; padding-bottom: 8px;">🎯 Overview</h3>
+        <p style="color: #4b5563; line-height: 1.6; margin: 0;">OVERVIEW_PARAGRAPH - what the group is exploring together and what they'll produce or discuss by the end.</p>
+    </div>
+    <!-- HOW THIS WORKS / TIMING (blue info callout) --> <!-- INSTRUCTION: Lay out the flow and timing (e.g., individual think time, small-group, whole-class share-out). Delete steps you don't use. -->
+    <div style="background-color: #eff6ff; border-left: 4px solid #60a5fa; border-radius: 0 4px 4px 0; padding: 16px; margin-bottom: 28px;">
+        <h3 style="font-size: 20px; color: #1d4ed8; margin: 0 0 12px 0;">⏱️ How This Works</h3>
+        <ol style="color: #1d4ed8; margin: 0; padding-left: 20px; line-height: 1.9;">
+            <li><strong>PHASE_1_MINUTES min - PHASE_1_NAME:</strong> PHASE_1_DESCRIPTION</li>
+            <li><strong>PHASE_2_MINUTES min - PHASE_2_NAME:</strong> PHASE_2_DESCRIPTION</li>
+            <li><strong>PHASE_3_MINUTES min - PHASE_3_NAME:</strong> PHASE_3_DESCRIPTION</li>
+        </ol>
+    </div>
+    <!-- GROUP SETUP / ROLES (optional gray box) --> <!-- INSTRUCTION: OPTIONAL. Use to assign roles or group norms. Delete the whole block if roles aren't needed. -->
+    <div style="margin-bottom: 28px;">
+        <h3 style="font-size: 24px; color: #374151; margin-top: 0; margin-bottom: 16px; border-bottom: 2px solid #e5e7eb; padding-bottom: 8px;">🧩 Group Setup</h3>
+        <div style="background-color: #f9fafb; padding: 20px; border-radius: 6px; border: 1px solid #e5e7eb;">
+            <p style="color: #4b5563; line-height: 1.6; margin: 0 0 12px 0;">GROUP_SIZE_AND_FORMATION_INSTRUCTIONS. Decide who will take each role:</p>
+            <ul style="color: #4b5563; margin: 0; padding-left: 20px; line-height: 1.8;">
+                <li><strong>ROLE_1:</strong> ROLE_1_RESPONSIBILITY</li>
+                <li><strong>ROLE_2:</strong> ROLE_2_RESPONSIBILITY</li>
+                <li><strong>ROLE_3:</strong> ROLE_3_RESPONSIBILITY</li>
+            </ul>
+        </div>
+    </div>
+    <!-- GUIDING QUESTIONS (green tips callout) --> <!-- INSTRUCTION: The questions groups should keep coming back to during discussion. -->
+    <div style="background-color: #f0fdf4; border-left: 4px solid #22c55e; border-radius: 0 4px 4px 0; padding: 16px; margin-bottom: 28px;">
+        <h3 style="font-size: 20px; color: #166534; margin: 0 0 12px 0;">❓ Guiding Questions</h3>
+        <p style="color: #14532d; margin: 0 0 8px 0;">Use these to steer your discussion for <strong>any</strong> item below:</p>
+        <ul style="color: #14532d; margin: 0; padding-left: 20px; line-height: 1.9;">
+            <li>GUIDING_QUESTION_1</li>
+            <li>GUIDING_QUESTION_2</li>
+            <li>GUIDING_QUESTION_3</li>
+        </ul>
+    </div>
+    <!-- =====================================================================
+         ACTIVITY BODY - OPTION A: Scenario / assignment accordion
+         INSTRUCTION: Each group opens its assigned item. Duplicate a <details>
+         block per scenario. Delete this whole OPTION A block if using a table.
+         ===================================================================== -->
+    <div style="margin-bottom: 28px;">
+        <h3 style="font-size: 24px; color: #374151; margin-top: 0; margin-bottom: 4px; border-bottom: 2px solid #e5e7eb; padding-bottom: 8px;">📂 Scenarios</h3>
+        <p style="color: #6b7280; font-size: 14px; margin: 8px 0 16px 0;">Click your group&rsquo;s assigned item to expand it.</p>
+        <details style="margin-bottom: 12px; background-color: #f9fafb; border-radius: 4px; border: 1px solid #e5e7eb;">
+            <summary style="cursor: pointer; font-size: 17px; padding: 14px 16px; color: #1f2937;">📄 Group A: SCENARIO_A_TITLE</summary>
+            <div style="padding: 0 16px 16px 16px; border-top: 1px solid #e5e7eb; color: #4b5563;">
+                <p style="margin-top: 16px; line-height: 1.7;">SCENARIO_A_DESCRIPTION</p>
+            </div>
+        </details>
+        <details style="margin-bottom: 12px; background-color: #f9fafb; border-radius: 4px; border: 1px solid #e5e7eb;">
+            <summary style="cursor: pointer; font-size: 17px; padding: 14px 16px; color: #1f2937;">📄 Group B: SCENARIO_B_TITLE</summary>
+            <div style="padding: 0 16px 16px 16px; border-top: 1px solid #e5e7eb; color: #4b5563;">
+                <p style="margin-top: 16px; line-height: 1.7;">SCENARIO_B_DESCRIPTION</p>
+            </div>
+        </details>
+        <details style="margin-bottom: 12px; background-color: #f9fafb; border-radius: 4px; border: 1px solid #e5e7eb;">
+            <summary style="cursor: pointer; font-size: 17px; padding: 14px 16px; color: #1f2937;">📄 Group C: SCENARIO_C_TITLE</summary>
+            <div style="padding: 0 16px 16px 16px; border-top: 1px solid #e5e7eb; color: #4b5563;">
+                <p style="margin-top: 16px; line-height: 1.7;">SCENARIO_C_DESCRIPTION</p>
+            </div>
+        </details>
+    </div>
+    <!-- =====================================================================
+         ACTIVITY BODY - OPTION B: Research / assignment table
+         INSTRUCTION: Use for assigning items to groups in a grid. Add or
+         remove <tr> rows as needed. Delete this whole OPTION B block if using
+         the accordion above. Keep the <caption> - it aids accessibility.
+         ===================================================================== -->
+    <div style="margin-bottom: 28px;">
+        <h3 style="font-size: 24px; color: #374151; margin-top: 0; margin-bottom: 16px; border-bottom: 2px solid #e5e7eb; padding-bottom: 8px;">📋 Group Assignments</h3>
+        <table style="border-collapse: collapse; width: 100%;" border="1">
+            <caption style="caption-side: top; text-align: left; color: #6b7280; font-size: 14px; margin-bottom: 8px;">TABLE_CAPTION</caption>
+            <tbody>
+                <tr>
+                    <th style="width: 20%; padding: 8px;" scope="col">Group</th>
+                    <th style="width: 40%; padding: 8px;" scope="col">COLUMN_2_HEADER</th>
+                    <th style="width: 40%; padding: 8px;" scope="col">COLUMN_3_HEADER</th>
+                </tr>
+                <tr>
+                    <th style="padding: 8px;" scope="row">A</th>
+                    <td style="padding: 8px;">ROW_A_COL_2</td>
+                    <td style="padding: 8px;">ROW_A_COL_3</td>
+                </tr>
+                <tr>
+                    <th style="padding: 8px;" scope="row">B</th>
+                    <td style="padding: 8px;">ROW_B_COL_2</td>
+                    <td style="padding: 8px;">ROW_B_COL_3</td>
+                </tr>
+                <tr>
+                    <th style="padding: 8px;" scope="row">C</th>
+                    <td style="padding: 8px;">ROW_C_COL_2</td>
+                    <td style="padding: 8px;">ROW_C_COL_3</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- SHARE-OUT (purple resources-style callout) --> <!-- INSTRUCTION: Tell groups how to report back to the whole class. -->
+    <div style="background-color: #faf5ff; border-left: 4px solid #a855f7; border-radius: 0 4px 4px 0; padding: 16px;">
+        <h3 style="font-size: 20px; color: #6b21a8; margin: 0 0 12px 0;">📣 Share-Out</h3>
+        <p style="color: #6b21a8; margin: 0; line-height: 1.6;">SHARE_OUT_INSTRUCTIONS - how each group presents (e.g., a 90-second pitch, one takeaway, a vote), and what to be ready to explain.</p>
+    </div>
+</div>
